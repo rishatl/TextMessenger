@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4568CE03270E3A0A00C83AC4 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CE02270E3A0A00C83AC4 /* ChatTextField.swift */; };
+		4568CE09270E3B6B00C83AC4 /* ChatMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CE08270E3B6B00C83AC4 /* ChatMessageViewModel.swift */; };
 		456AB351270A198B0099980C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AB350270A198B0099980C /* AppDelegate.swift */; };
 		456AB353270A198B0099980C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AB352270A198B0099980C /* SceneDelegate.swift */; };
-		456AB355270A198B0099980C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AB354270A198B0099980C /* ViewController.swift */; };
+		456AB355270A198B0099980C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AB354270A198B0099980C /* ChatVC.swift */; };
 		456AB358270A198B0099980C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456AB356270A198B0099980C /* Main.storyboard */; };
 		456AB35A270A19960099980C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456AB359270A19960099980C /* Assets.xcassets */; };
 		456AB35D270A19960099980C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456AB35B270A19960099980C /* LaunchScreen.storyboard */; };
+		456AB36C270A1DCD0099980C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AB36B270A1DCD0099980C /* UIColor.swift */; };
+		458B1EC3270B754E00A697E3 /* ChatTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B1EC2270B754E00A697E3 /* ChatTextFieldView.swift */; };
+		45947BD0270A3DED000EA498 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45947BCF270A3DED000EA498 /* ChatMessageCell.swift */; };
+		45947BD3270A47CB000EA498 /* DateHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45947BD2270A47CB000EA498 /* DateHeaderLabel.swift */; };
+		45947BDB270A5F68000EA498 /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45947BDA270A5F5A000EA498 /* Habibi-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4568CE02270E3A0A00C83AC4 /* ChatTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextField.swift; sourceTree = "<group>"; };
+		4568CE08270E3B6B00C83AC4 /* ChatMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageViewModel.swift; sourceTree = "<group>"; };
 		456AB34D270A198B0099980C /* TextMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456AB350270A198B0099980C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456AB352270A198B0099980C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		456AB354270A198B0099980C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		456AB354270A198B0099980C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		456AB357270A198B0099980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		456AB359270A19960099980C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456AB35C270A19960099980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456AB35E270A19960099980C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456AB36B270A1DCD0099980C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		458B1EC2270B754E00A697E3 /* ChatTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextFieldView.swift; sourceTree = "<group>"; };
+		45947BCF270A3DED000EA498 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		45947BD2270A47CB000EA498 /* DateHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderLabel.swift; sourceTree = "<group>"; };
+		45947BDA270A5F5A000EA498 /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Habibi-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455BCAFF270B394F00EFE753 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				456AB36B270A1DCD0099980C /* UIColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		455BCB00270B395D00EFE753 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				4568CE07270E3B5A00C83AC4 /* ViewModels */,
+				455BCB01270B396F00EFE753 /* Views */,
+				456AB354270A198B0099980C /* ChatVC.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		455BCB01270B396F00EFE753 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4568CE05270E3A9900C83AC4 /* Cells */,
+				45947BD2270A47CB000EA498 /* DateHeaderLabel.swift */,
+				4568CE02270E3A0A00C83AC4 /* ChatTextField.swift */,
+				458B1EC2270B754E00A697E3 /* ChatTextFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4568CE05270E3A9900C83AC4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				45947BCF270A3DED000EA498 /* ChatMessageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4568CE07270E3B5A00C83AC4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4568CE08270E3B6B00C83AC4 /* ChatMessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		456AB344270A198B0099980C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +115,25 @@
 		456AB34F270A198B0099980C /* TextMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				455BCB00270B395D00EFE753 /* Chat */,
 				456AB350270A198B0099980C /* AppDelegate.swift */,
 				456AB352270A198B0099980C /* SceneDelegate.swift */,
-				456AB354270A198B0099980C /* ViewController.swift */,
 				456AB356270A198B0099980C /* Main.storyboard */,
 				456AB359270A19960099980C /* Assets.xcassets */,
 				456AB35B270A19960099980C /* LaunchScreen.storyboard */,
 				456AB35E270A19960099980C /* Info.plist */,
+				455BCAFF270B394F00EFE753 /* Colors */,
+				45947BD9270A5F4C000EA498 /* Fonts */,
 			);
 			path = TextMessenger;
+			sourceTree = "<group>";
+		};
+		45947BD9270A5F4C000EA498 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45947BDA270A5F5A000EA498 /* Habibi-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45947BDB270A5F68000EA498 /* Habibi-Regular.ttf in Resources */,
 				456AB35D270A19960099980C /* LaunchScreen.storyboard in Resources */,
 				456AB35A270A19960099980C /* Assets.xcassets in Resources */,
 				456AB358270A198B0099980C /* Main.storyboard in Resources */,
@@ -137,9 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456AB355270A198B0099980C /* ViewController.swift in Sources */,
+				456AB355270A198B0099980C /* ChatVC.swift in Sources */,
 				456AB351270A198B0099980C /* AppDelegate.swift in Sources */,
+				45947BD0270A3DED000EA498 /* ChatMessageCell.swift in Sources */,
+				45947BD3270A47CB000EA498 /* DateHeaderLabel.swift in Sources */,
 				456AB353270A198B0099980C /* SceneDelegate.swift in Sources */,
+				458B1EC3270B754E00A697E3 /* ChatTextFieldView.swift in Sources */,
+				4568CE09270E3B6B00C83AC4 /* ChatMessageViewModel.swift in Sources */,
+				456AB36C270A1DCD0099980C /* UIColor.swift in Sources */,
+				4568CE03270E3A0A00C83AC4 /* ChatTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
