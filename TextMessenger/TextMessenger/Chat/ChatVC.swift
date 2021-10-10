@@ -13,7 +13,7 @@ class ChatVC: UIViewController {
 
     //MARK: - Private Properties
 
-    private let cellId = "chatCell"
+    private let messageCellId = "messageCell"
     private let tableView = UITableView()
     private let chatTextFieldView = ChatTextFieldView()
 
@@ -41,7 +41,8 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
+        view.backgroundColor = .white
+        
         navigationItem.title = "Messages"
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Habibi-Regular", size: 14)!]
 
@@ -56,7 +57,7 @@ class ChatVC: UIViewController {
 
     private func setupTableView() {
 
-        tableView.register(ChatMessageCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(ChatMessageCell.self, forCellReuseIdentifier: messageCellId)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
@@ -149,7 +150,7 @@ extension ChatVC: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatMessageCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: messageCellId, for: indexPath) as! ChatMessageCell
         cell.selectionStyle = .none
 
         let chatMessage = chatMessages[indexPath.section][indexPath.row]
