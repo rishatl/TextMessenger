@@ -21,8 +21,8 @@ class ChatVC: UIViewController {
 
     var chatMessages = [
         [
-            ChatMessageViewModel(image: UIImage(named: "Profile Photo"), text: "Hi! I'm there", isIncoming: true, date: Date.dateFromCustomString(customString: "01/03/2021")),
-            ChatMessageViewModel(image: UIImage(named: "Profile Photo"), text: "Alex, let’s meet this weekend. I’ll check with Dave too 😎", isIncoming: true, date: Date.dateFromCustomString(customString: "01/03/2021"))
+            ChatMessageViewModel(image: UIImage(named: "ProfilePhoto"), text: "Hi! I'm there", isIncoming: true, date: Date.dateFromCustomString(customString: "01/03/2021")),
+            ChatMessageViewModel(image: UIImage(named: "ProfilePhoto"), text: "Alex, let’s meet this weekend. I’ll check with Dave too 😎", isIncoming: true, date: Date.dateFromCustomString(customString: "01/03/2021"))
         ],
         [
             ChatMessageViewModel(image: nil, text: "Hello, there!", isIncoming: false, date: Date.dateFromCustomString(customString: "02/01/2021")),
@@ -32,7 +32,7 @@ class ChatVC: UIViewController {
             ChatMessageViewModel(image: nil, text: "I’m visiting mom this sunday 👻", isIncoming: false, date: Date.dateFromCustomString(customString: "10/02/2021"))
         ],
         [
-            ChatMessageViewModel(image: UIImage(named: "Profile Photo"), text: "Alrighty! Will give you a call shortly 🤗", isIncoming: true, date: Date.dateFromCustomString(customString: "10/03/2021"))
+            ChatMessageViewModel(image: UIImage(named: "ProfilePhoto"), text: "Alrighty! Will give you a call shortly 🤗", isIncoming: true, date: Date.dateFromCustomString(customString: "10/03/2021"))
         ]
     ]
 
@@ -42,8 +42,7 @@ class ChatVC: UIViewController {
 
         super.viewDidLoad()
         view.backgroundColor = .white
-        
-        navigationItem.title = "Messages"
+
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Habibi-Regular", size: 14)!]
 
         setupChatTextFieldView()
@@ -104,6 +103,10 @@ class ChatVC: UIViewController {
             chatTextFieldView.heightAnchor.constraint(equalToConstant: 88)
         ])
 
+    }
+
+    func configure(username: String, profileImage: UIImage?) {
+        navigationItem.title = username
     }
 
 }
@@ -172,6 +175,8 @@ extension ChatVC: ChatTextFieldViewDelegate {
         let currentDate = Date.getCurrentDate()
         let newMessage = [ChatMessageViewModel(image: nil, text: textMessage, isIncoming: false, date: Date.dateFromCustomString(customString: currentDate))]
         chatMessages.append(newMessage)
+
+        
         tableView.reloadData()
         
     }

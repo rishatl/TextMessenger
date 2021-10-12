@@ -68,8 +68,10 @@ class ProfileViewController: UIViewController {
 
         if previousTraitCollection?.userInterfaceStyle == .dark {
             logoutButton.layer.borderColor = UIColor.black.cgColor
+            navigationController?.setNavigationBarTheme(using: MINavigationBarDarkTheme.shared)
         } else {
             logoutButton.layer.borderColor = UIColor.white.cgColor
+            navigationController?.setNavigationBarTheme(using: MINavigationBarDarkTheme.shared)
         }
 
     }

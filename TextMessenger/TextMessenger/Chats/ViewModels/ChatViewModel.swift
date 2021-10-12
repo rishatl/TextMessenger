@@ -9,7 +9,7 @@ import UIKit
 
 //MARK: - ViewModel
 
-struct ChatModelView {
+struct ChatViewModel {
 
     let chats: [Chat]
 
