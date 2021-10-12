@@ -23,7 +23,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController(rootViewController: vc)
 
         let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = UIColor(hexString: "#F9F9F9")
         navBarAppearance.largeTitleTextAttributes = [.font: UIFont(name: "Habibi-Regular", size: 34)!,
                                                      .foregroundColor: UIColor.label]
         navBarAppearance.titleTextAttributes = [.font: UIFontMetrics(forTextStyle: .body).scaledFont(for:   UIFont(name: "Habibi-Regular", size: 17)!),
